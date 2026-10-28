@@ -17,7 +17,14 @@ export interface AnalyticsEventPayload {
  */
 export function trackEvent(name: AnalyticsEventName, payload?: AnalyticsEventPayload): void {
 	if (typeof window === 'undefined') return;
-	// Safe no-op by default or pluggable with privacy-friendly analytics (e.g. Plausible / Vercel Web Analytics)
+
+	const win = window as Window & {
+		gtag?: (command: 'event', eventName: string, eventParams?: AnalyticsEventPayload) => void;
+	};
+	if (typeof win.gtag === 'function') {
+		win.gtag('event', name, payload);
+	}
+
 	if (import.meta.env.DEV) {
 		console.debug('[BinaAct Analytics]', name, payload ?? {});
 	}
