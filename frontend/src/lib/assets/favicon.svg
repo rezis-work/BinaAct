@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+	<rect width="128" height="128" rx="28" fill="#ffffff" />
+	<!-- House Outline (Dark Blue) -->
+	<path
+		d="M22 60L64 24L106 60"
+		stroke="#1E3A5F"
+		stroke-width="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M34 52V98C34 101.314 36.6863 104 40 104H76"
+		stroke="#1E3A5F"
+		stroke-width="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<!-- Document Inside House -->
+	<rect x="46" y="46" width="34" height="44" rx="4" fill="#F0F7FF" stroke="#1E3A5F" stroke-width="4" />
+	<line x1="53" y1="58" x2="73" y2="58" stroke="#60A5FA" stroke-width="4" stroke-linecap="round" />
+	<line x1="53" y1="68" x2="73" y2="68" stroke="#60A5FA" stroke-width="4" stroke-linecap="round" />
+	<line x1="53" y1="78" x2="66" y2="78" stroke="#60A5FA" stroke-width="4" stroke-linecap="round" />
+	<!-- Teal-Green Shield with Checkmark -->
+	<path
+		d="M88 64L108 71V86C108 98.5 99.5 107.5 88 112C76.5 107.5 68 98.5 68 86V71L88 64Z"
+		fill="#149E8B"
+	/>
+	<path
+		d="M80 87L86 93L97 81"
+		stroke="#FFFFFF"
+		stroke-width="6"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+</svg>

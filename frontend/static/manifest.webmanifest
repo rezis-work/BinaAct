@@ -1,0 +1,63 @@
+{
+	"id": "/",
+	"name": "BinaAct (ბინააქტი) — ბინის მიღება-ჩაბარების აქტი",
+	"short_name": "BinaAct",
+	"description": "შექმენით ბინის მიღება-ჩაბარების აქტი, აღწერეთ ბინის მდგომარეობა, დაამატეთ ფოტოები და ჩამოტვირთეთ PDF დოკუმენტი. / Create an apartment move-in or move-out handover report offline.",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#FFFFFF",
+	"theme_color": "#1E3A5F",
+	"lang": "ka",
+	"dir": "ltr",
+	"categories": ["productivity", "utilities", "business"],
+	"icons": [
+		{
+			"src": "/icon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/favicon.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/favicon.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "აქტის შექმნა / Create Report",
+			"short_name": "Create Act",
+			"description": "Start or continue an apartment handover inspection",
+			"url": "/create",
+			"icons": [
+				{
+					"src": "/icon.svg",
+					"sizes": "any",
+					"type": "image/svg+xml"
+				}
+			]
+		},
+		{
+			"name": "აქტის გადახედვა / Review Report",
+			"short_name": "Review PDF",
+			"description": "Review report and download A4 PDF",
+			"url": "/review",
+			"icons": [
+				{
+					"src": "/icon.svg",
+					"sizes": "any",
+					"type": "image/svg+xml"
+				}
+			]
+		}
+	]
+}

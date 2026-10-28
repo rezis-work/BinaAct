@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+	<rect width="512" height="512" rx="112" fill="#ffffff" />
+	<!-- House Outline (Dark Blue) -->
+	<path
+		d="M88 240L256 96L424 240"
+		stroke="#1E3A5F"
+		stroke-width="40"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M136 208V392C136 405.255 146.745 416 160 416H304"
+		stroke="#1E3A5F"
+		stroke-width="40"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<!-- Document Inside House -->
+	<rect x="184" y="184" width="136" height="176" rx="16" fill="#F0F7FF" stroke="#1E3A5F" stroke-width="16" />
+	<line x1="212" y1="232" x2="292" y2="232" stroke="#60A5FA" stroke-width="16" stroke-linecap="round" />
+	<line x1="212" y1="272" x2="292" y2="272" stroke="#60A5FA" stroke-width="16" stroke-linecap="round" />
+	<line x1="212" y1="312" x2="264" y2="312" stroke="#60A5FA" stroke-width="16" stroke-linecap="round" />
+	<!-- Teal-Green Shield with Checkmark -->
+	<path
+		d="M352 256L432 284V344C432 394 398 430 352 448C306 430 272 394 272 344V284L352 256Z"
+		fill="#149E8B"
+	/>
+	<path
+		d="M320 348L344 372L388 324"
+		stroke="#FFFFFF"
+		stroke-width="24"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+</svg>
