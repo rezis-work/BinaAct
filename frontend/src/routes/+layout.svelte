@@ -3,8 +3,10 @@
 	import { onMount } from 'svelte';
 	import favicon from '#lib/assets/favicon.svg';
 	import logo from '#lib/assets/logo.png';
+	import { page } from '$app/state';
 	import { trackEvent } from '$lib/analytics';
 	import { i18n } from '$lib/i18n/index.svelte';
+	import { canonicalUrl, pageSeo } from '$lib/seo';
 	import PwaInstallPrompt from '$lib/components/PwaInstallPrompt.svelte';
 	import Globe from 'lucide-svelte/icons/globe';
 	import Smartphone from 'lucide-svelte/icons/smartphone';
@@ -13,6 +15,9 @@
 
 	let showPwaDialog = $state(false);
 	let isPwaStandalone = $state(false);
+
+	const seo = $derived(pageSeo(page.url.pathname, i18n.isEn));
+	const canonical = $derived(canonicalUrl(page.url.pathname));
 
 	onMount(() => {
 		i18n.hydrateFromStorage();
@@ -29,17 +34,18 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 	<meta name="apple-mobile-web-app-title" content="BinaAct" />
-	<title>
-		{i18n.isEn
-			? 'BinaAct — Apartment Handover Report'
-			: 'ბინააქტი (BinaAct) — ბინის მიღება-ჩაბარების აქტი'}
-	</title>
-	<meta
-		name="description"
-		content={i18n.isEn
-			? 'Create an apartment move-in or move-out handover report, document room conditions, attach photos, and download a printable PDF.'
-			: 'შექმენით ბინის მიღება-ჩაბარების აქტი, აღწერეთ ბინის მდგომარეობა, დაამატეთ ფოტოები და ჩამოტვირთეთ PDF დოკუმენტი.'}
-	/>
+	<title>{seo.title}</title>
+	<meta name="description" content={seo.description} />
+	<meta name="robots" content={seo.robots} />
+	<meta property="og:title" content={seo.title} />
+	<meta property="og:description" content={seo.description} />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="BinaAct" />
+	<meta property="og:locale" content={i18n.isEn ? 'en_US' : 'ka_GE'} />
+	{#if canonical}
+		<link rel="canonical" href={canonical} />
+		<meta property="og:url" content={canonical} />
+	{/if}
 </svelte:head>
 
 <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900 overflow-x-hidden">

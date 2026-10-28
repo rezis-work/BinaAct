@@ -10,12 +10,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>
-		{i18n.isEn ? 'Review Report — BinaAct' : 'აქტის გადახედვა — BinaAct (ბინააქტი)'}
-	</title>
-</svelte:head>
-
 <div class="space-y-6">
 	<section class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs space-y-5">
 		<header class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">

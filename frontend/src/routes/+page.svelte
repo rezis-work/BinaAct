@@ -116,6 +116,44 @@
 		</div>
 	</section>
 
+	<section aria-labelledby="what-is-act-heading" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4">
+		<h2 id="what-is-act-heading" class="text-lg sm:text-xl font-bold text-[#1E3A5F]">
+			{i18n.isEn
+				? 'What is an apartment handover report?'
+				: 'რა არის ბინის მიღება-ჩაბარების აქტი?'}
+		</h2>
+		<p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+			{i18n.isEn
+				? 'An apartment handover report is the document a landlord and a tenant fill in when the apartment is handed over or returned. It records the condition of each room, existing damage, furniture and appliances, utility meter readings, and how many keys were exchanged.'
+				: 'ბინის მიღება-ჩაბარების აქტი არის დოკუმენტი, რომელსაც გამქირავებელი და დამქირავებელი ავსებენ ბინის გადაცემის ან დაბრუნების დროს. აქტში ფიქსირდება თითოეული ოთახის მდგომარეობა, არსებული დაზიანებები, ავეჯი და ტექნიკა, კომუნალური მრიცხველების ჩვენებები და გადაცემული გასაღებების რაოდენობა.'}
+		</p>
+		<h3 class="font-bold text-slate-900 text-base">
+			{i18n.isEn ? 'When you need it' : 'როდის გჭირდებათ აქტი'}
+		</h3>
+		<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-base text-slate-700 leading-relaxed">
+			<li>
+				{i18n.isEn
+					? 'Moving into a rented apartment, so the starting condition is written down.'
+					: 'ბინაში შესვლისას, რომ საწყისი მდგომარეობა წერილობით იყოს დაფიქსირებული.'}
+			</li>
+			<li>
+				{i18n.isEn
+					? 'Moving out, before the deposit is returned.'
+					: 'ბინის დაბრუნებისას, დეპოზიტის დაბრუნებამდე.'}
+			</li>
+			<li>
+				{i18n.isEn
+					? 'When you want photos of damage and a printable PDF both parties can sign.'
+					: 'როცა გინდათ დაზიანებების ფოტოები და ამოსაბეჭდი PDF, რომელსაც ორივე მხარე მოაწერს ხელს.'}
+			</li>
+		</ul>
+		<p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+			{i18n.isEn
+				? 'BinaAct is free and does not require an account. The report and photos stay on your phone or computer, and the PDF is created in the browser.'
+				: 'ბინააქტი უფასოა და ანგარიში არ სჭირდება. აქტი და ფოტოები რჩება თქვენს ტელეფონში ან კომპიუტერში, PDF კი იქმნება პირდაპირ ბრაუზერში.'}
+		</p>
+	</section>
+
 	<!-- Basic Privacy Information -->
 	<section aria-labelledby="privacy-summary-heading" class="bg-emerald-50/70 rounded-xl border border-emerald-200 p-5 sm:p-6">
 		<div class="flex items-start gap-3.5">
